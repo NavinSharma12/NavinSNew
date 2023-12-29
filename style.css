@@ -33,7 +33,7 @@ nav ul li a:hover {
   color: #34495E;
 }
 
-a.active {
+a:focus,.nav-link:focus, .nav-link:hover {
   color: #0693e3 !important;
   border-bottom: 2px solid #0693e3;
 }
@@ -822,7 +822,6 @@ section#carrerAptitude {
 
 section#home {
   padding: 0;
-  padding-top:121px;
 }
 
 section#home a i {
