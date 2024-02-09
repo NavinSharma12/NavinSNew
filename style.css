@@ -822,13 +822,15 @@ section#carrerAptitude {
 
 
 img.topBGiMAGE{
-  width: 1119px;
-  height: 637px;
+  width: 83%;
+  height: 100%;
+  margin-top: 10px;
 }
 
 section#home {
   padding: 0;
   background: white !important;
+  height: auto;
 }
 
 section#home a i {
