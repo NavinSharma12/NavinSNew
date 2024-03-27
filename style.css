@@ -3,9 +3,17 @@ nav {
   height: 70px !important;
   position: fixed !important;
   top: 0 !important;
-  background-color: white !important;
-  box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.15) !important;
+  background-color: #fff !important;
+  /* box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.15) !important; */
   z-index: 999990;
+}
+
+.navbar.scrolled {
+  background-color: white !important; /* Background color when scrolled */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow when scrolled */
+}
+.navbar.scrolled ul.navbar-nav li a {
+  color: #ec6a1b !important; /* Change link color when navbar is scrolled */
 }
 
 nav ul {
@@ -22,7 +30,7 @@ nav ul li {
 
 nav ul li a {
   padding: 10px 0 !important;
-  color: #000 !important;
+  color: #ec6a1b !important;
   font-size: 13px !important;
   text-decoration: none !important;
   font-weight: bold !important;
@@ -35,7 +43,7 @@ nav ul li a:hover {
 
 a:focus,.nav-link:focus, .nav-link:hover {
   color: #0693e3 !important;
-  border-bottom: 2px solid #0693e3;
+  /* border-bottom: 2px solid #0693e3; */
 }
 
 /* Headings */
@@ -826,6 +834,60 @@ img.topBGiMAGE{
   height: 637px;
 }
 
+#home #carouselExample .carousel-inner .carousel-item {
+position: relative;
+}
+
+#home #carouselExample .carousel-inner .carousel-item .homeCarouselContent  p{
+  font-size: 43px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    /* bottom: 50%; */
+    top: 142px;
+    left: 146px;
+    /* transform: translate(-50%, -32%); */
+    text-align: start;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 2px rgb(29, 1, 1);
+    animation: myfirst 0.5s 2;
+}
+
+#home #carouselExample .carousel-inner .carousel-item .homeCarouselContent  p span{
+  font-size: 30px;
+  color: #ea781b;
+  text-shadow: 1px 1px 2px rgb(10 10 10);
+}
+
+@keyframes myfirst {
+  0%   {left: 0px; top: 142px;}
+  /* 25%  { left: 200px; top: 0px;} */
+
+}
+
+#home #carouselExample .carousel-inner .carousel-item img{
+  animation: zoomInFaster 24s linear infinite 0s;
+  -o-animation: zoomInFaster 24s linear infinite 0s;
+  -moz-animation: zoomInFaster 24s linear infinite 0s;
+  -webkit-animation: zoomInFaster 24s linear infinite 0s;
+}
+
+@keyframes zoomInFaster {
+  0% {
+      transform: scale(1);
+      -ms-transform: scale(1);
+  }
+  30% {
+      transform: scale(1.15);
+      -ms-transform: scale(1.15);
+  }
+  100% {
+      transform: scale(1);
+      -ms-transformm: scale(1);
+  }
+}
+
 section#home {
   padding: 0;
   background: white !important;
@@ -943,3 +1005,23 @@ section#missionVision {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
