@@ -13,7 +13,7 @@ nav {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow when scrolled */
 }
 .navbar.scrolled ul.navbar-nav li a {
-  color: #ec6a1b !important; /* Change link color when navbar is scrolled */
+  color: #497cd7 !important; /* Change link color when navbar is scrolled */
 }
 
 nav ul {
@@ -30,7 +30,7 @@ nav ul li {
 
 nav ul li a {
   padding: 10px 0 !important;
-  color: #ec6a1b !important;
+  color: #497cd7 !important;
   font-size: 13px !important;
   text-decoration: none !important;
   font-weight: bold !important;
@@ -38,12 +38,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #34495E;
+  color: #ec6a1b;
 }
 
 a:focus,.nav-link:focus, .nav-link:hover {
-  color: #0693e3 !important;
-  /* border-bottom: 2px solid #0693e3; */
+  color: #ec6a1b !important;
+  /* border-bottom: 2px solid #278fe8; */
 }
 
 /* Headings */
@@ -65,7 +65,7 @@ section {
 }
 
 section:nth-child(even) {
-  background: #ecf0f1;
+  background: #fbfbfb;
 }
 
 section:nth-child(odd) {
@@ -94,7 +94,7 @@ p.mainHeading {
 }
 
 p.mainHeading span {
-  color: #0693e3
+  color: #278fe8
 }
 
 #about .aboutContent {
@@ -108,7 +108,7 @@ section#about {
 p.mainHeading span.smallLine {
   width: 37px;
   display: block;
-  height: 1px;
+  height: 3px;
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -117,16 +117,16 @@ p.mainHeading span.smallLine {
 }
 
 span.smallLine {
-  background-color: #0693e3;
+  background-color: #ec6a1b;
 }
 
 .blueInfo {
-  color: #0693e3;
+  color: #278fe8;
   font-size: 16px;
 }
 
 .caraousalAbout h2 {
-  color: #0693e3;
+  color: #278fe8;
   font-size: 18px;
   line-height: 21px;
 
@@ -140,7 +140,7 @@ span.smallLine {
 
 .grayParaInfo {
   font-size: 14px;
-  color: gray;
+  color: #ec6a1b;
   padding-top: 3px;
 }
 
@@ -160,7 +160,7 @@ span.smallLine {
   position: relative;
   width: 125px;
   height: 108.92px;
-  background: #0693e3;
+  background: #278fe8;
   box-sizing: border-box;
   -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
 }
@@ -188,7 +188,7 @@ span.smallLine {
 }
 
 .canvaHeading {
-  color: #0693e3;
+  color: #278fe8;
   margin-top: 14px;
   transition: all 300ms linear 0s;
   font-size: 20px !important;
@@ -215,7 +215,7 @@ span.smallLine {
 
 
 .carousel-indicators [data-bs-target] {
-  background-color: #0693e3;
+  background-color: #278fe8;
   /* border-top: 2px solid gray; */
   /* border-bottom: 2px solid gray */
 }
@@ -300,12 +300,12 @@ section#getYourLife {
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 10px;
-  color: #0693e3;
+  color: #278fe8;
 }
 
 .btnSucess {
   width: auto;
-  background-color: #0693e3;
+  background-color: #278fe8;
   color: white;
   font-weight: bold;
   border-radius: 5px;
@@ -330,7 +330,7 @@ section#getYourLife {
 
 .portFolioTabs ul li a.active {
   color: white !important;
-  background-color: #0693e3;
+  background-color: #278fe8;
 }
 
 
@@ -371,7 +371,7 @@ section#getYourLife {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #0693e3;
+  background-color: #278fe8;
   opacity: 0.5;
   transition: all 0.45s ease;
 }
@@ -405,7 +405,6 @@ section#getYourLife {
 
 .snip__image {
   backface-visibility: hidden;
-  max-width: 100%;
   vertical-align: top;
 }
 
@@ -427,7 +426,7 @@ section#getYourLife {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #0693e3;
+  background-color: #278fe8;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   content: "";
   opacity: 0.5;
@@ -668,7 +667,7 @@ section#OurLevelOfBri {
 
 
 .FounderName {
-  color: #0693e3;
+  color: #278fe8;
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 0;
@@ -765,9 +764,9 @@ section#quotes {
 }
 
 .card ul li::marker {
-  color: #0693e3;
+  color: #278fe8;
   /* Change the color of the marker */
-  background-color: #0693e3;
+  background-color: #278fe8;
   /* Change the color of the marker */
   ;
   /* Change the background color of the marker */
@@ -776,7 +775,7 @@ section#quotes {
 }
 
 .card-title {
-  color: #0693e3;
+  color: #278fe8;
   font-size: 18px;
   font-weight: bold;
   padding-top: 18px;
@@ -788,7 +787,7 @@ section#quotes {
 }
 
 /* .getIntouch{
-    border: 1px solid #0693e3;
+    border: 1px solid #278fe8;
       box-shadow: 1px 8px 20px grey;
       padding: 20px;
       border-radius: 9px;
@@ -796,7 +795,7 @@ section#quotes {
   } */
 
 .getIntouch a {
-  color: #0693e3;
+  color: #278fe8;
 }
 
 .getIntouch a:hover {
@@ -809,7 +808,7 @@ section#contactUs {
 
 .carrerApptitudeCards i {
   font-size: 41px;
-  color: #0693e3;
+  color: #278fe8;
 }
 
 section#carrerAptitude {
@@ -840,7 +839,7 @@ position: relative;
 
 #home #carouselExample .carousel-inner .carousel-item .homeCarouselContent  p{
   font-size: 43px;
-    color: white;
+    color: #ffffff;
     position: absolute;
     top: 50%;
     /* bottom: 50%; */
@@ -867,10 +866,10 @@ position: relative;
 }
 
 #home #carouselExample .carousel-inner .carousel-item img{
-  animation: zoomInFaster 24s linear infinite 0s;
-  -o-animation: zoomInFaster 24s linear infinite 0s;
-  -moz-animation: zoomInFaster 24s linear infinite 0s;
-  -webkit-animation: zoomInFaster 24s linear infinite 0s;
+  animation: zoomInFaster 10s linear infinite 0s;
+  -o-animation: zoomInFaster 10s linear infinite 0s;
+  -moz-animation: zoomInFaster 10s linear infinite 0s;
+  -webkit-animation: zoomInFaster 10s linear infinite 0s;
 }
 
 @keyframes zoomInFaster {
@@ -968,7 +967,7 @@ section#whyChooseUs {
 
 .topArrow i {
   font-size: 30px;
-  color: #0693e3;
+  color: #ed802d;
 }
 
 .topArrow {
