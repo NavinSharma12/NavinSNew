@@ -854,7 +854,7 @@ position: relative;
 }
 
 #home #carouselExample .carousel-inner .carousel-item .homeCarouselContent  p span{
-  font-size: 30px;
+  font-size: 20px;
   color: #ea781b;
   text-shadow: 1px 1px 2px rgb(10 10 10);
 }
@@ -866,10 +866,10 @@ position: relative;
 }
 
 #home #carouselExample .carousel-inner .carousel-item img{
-  animation: zoomInFaster 10s linear infinite 0s;
-  -o-animation: zoomInFaster 10s linear infinite 0s;
-  -moz-animation: zoomInFaster 10s linear infinite 0s;
-  -webkit-animation: zoomInFaster 10s linear infinite 0s;
+  animation: zoomInFaster 24s linear infinite 0s;
+  -o-animation: zoomInFaster 24s linear infinite 0s;
+  -moz-animation: zoomInFaster 24s linear infinite 0s;
+  -webkit-animation: zoomInFaster 24s linear infinite 0s;
 }
 
 @keyframes zoomInFaster {
@@ -878,8 +878,8 @@ position: relative;
       -ms-transform: scale(1);
   }
   30% {
-      transform: scale(1.15);
-      -ms-transform: scale(1.15);
+      transform: scale(1.25);
+      -ms-transform: scale(1.25);
   }
   100% {
       transform: scale(1);
@@ -911,7 +911,7 @@ section#home a i {
   }
 
   50% {
-    transform: translateY(20px);
+    transform: translateY(40px);
     /* Adjust the height for the bouncing effect */
   }
 }
