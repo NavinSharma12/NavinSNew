@@ -1122,7 +1122,7 @@
     </div>
   </section>
 
-  <section id="ourTeam">
+  <section id="ourTeam"  style="background-color: #ffffff;">
     <p class="mainHeading">OUR <span>TEAM </span><span class="smallLine"></span></p>
     <p class="grayParaInfo pt-4 pb-4 mb-0">Our Passion leads to design, design leads to performance, and performance
       leads to success. We believe that apps and websites should not only be eye catching but actually provide a great
@@ -1237,29 +1237,60 @@
   </section>
 
 
-  <section id="ourValuableClient">
+  <section id="ourValuableClient" style="background-color: #ffffff;">
     <h3>OUR VALUABLE CLIENTS</h3>
     <p class="grayParaInfo pt-2 pb-4">We are the award winning website designers from India</p>
 
-    <div class="d-flex justify-content-center">
-      <img src="img/allClient.png" width="85%">
-      <!-- <div class="jcarousel">
-      <img  src="img/client1.png">
-    </div>
-    <div class="jcarousel">
-      <img  src="img/client1.png">
-    </div>
-    <div class="jcarousel">
-      <img  src="img/client1.png">
-    </div>
-    <div class="jcarousel">
-      <img  src="img/client1.png">
-    </div>
-    <div class="jcarousel">
-      <img  src="img/client1.png">
-    </div> -->
+    <!--Courosel Clients slider-->
 
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+        </div>
+      </div>
     </div>
+    <!--End of Courosel-->
+
   </section>
 
   <!-- <section id="whyChooseUs">
@@ -1461,6 +1492,29 @@
         });
       });
     }
+  </script>
+  
+  <script>
+    const carouselItems = document.querySelectorAll(".carousel_item"); 
+    let i = 1;
+
+    setInterval(() => {
+    // Accessing All the carousel Items
+    Array.from(carouselItems).forEach((item,index) => {
+
+      if(i < carouselItems.length){
+        item.style.transform = `translateX(-${i*100}%)`
+      }
+      })
+
+
+      if(i < carouselItems.length){
+        i++;
+      }
+      else{
+        i=0;
+      }
+    },2000)
   </script>
   
 </body>
