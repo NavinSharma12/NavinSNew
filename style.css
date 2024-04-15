@@ -3,17 +3,39 @@ nav {
   height: 70px !important;
   position: fixed !important;
   top: 0 !important;
-  background-color: #fff !important;
+  /* background-color: #fff !important; */
   /* box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.15) !important; */
   z-index: 999990;
+  background-color: #70a7c8 !important;
+  background: linear-gradient(45deg, #fff,#fff,   #f2f4f4,#fff,  #f4f2f2, #fff,  #fff, #f4f2f2);
+	background-size: 400% 400%;
+	animation: gradientBG 10s ease infinite;
 }
 
 .navbar.scrolled {
-  background-color: white !important; /* Background color when scrolled */
+  /* background-color: white !important; Background color when scrolled */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow when scrolled */
+  background-color: #70a7c8 !important;
+  background: linear-gradient(45deg, #fff,#fff,   #f4f2f2,#fff,  #f4f2f2, #fff,  #fff, #f4f2f2);
+	background-size: 400% 400%;
+	animation: gradientBG 10s ease infinite;
 }
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 .navbar.scrolled ul.navbar-nav li a {
-  color: #497cd7 !important; /* Change link color when navbar is scrolled */
+  color: #278fe8 !important; /* Change link color when navbar is scrolled */
 }
 
 nav ul {
@@ -30,7 +52,7 @@ nav ul li {
 
 nav ul li a {
   padding: 10px 0 !important;
-  color: #497cd7 !important;
+  color: #278fe8 !important;
   font-size: 13px !important;
   text-decoration: none !important;
   font-weight: bold !important;
@@ -518,7 +540,7 @@ section#ourPortfolio {
 
 #OurLevelOfBri {
   background-image: url(img/brilliance-bg.jpg);
-  padding-top: 85px;
+  padding-top: 65px;
   padding-bottom: 110px;
   background-attachment: fixed;
   background-position: 50% 99px
@@ -1158,3 +1180,155 @@ Test CSS
 		width: auto;
 	}
 }
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+*,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.shape-box {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    height: 330px;
+    margin: 30px 10px 30px;
+    box-shadow: 0 6px 30px 0 rgba(0, 0, 0, .12);
+    overflow: hidden;
+    width: 20%;
+}
+
+.shape-box_half {
+    overflow: hidden;
+    text-align: left;
+}
+
+.shape-box_half:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: skewY(53.5deg);
+    transform-origin: top left;
+    transition: transform .4s;
+    background: #fff;
+    z-index: 1;
+}
+
+.shape-box>img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.shape-box_half figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px 20px;
+    transition: transform .4s;
+    transform: translateY(100%);
+    z-index: 3;
+}
+
+.shape-box_half figcaption .show-cont {
+    position: absolute;
+    bottom: calc(100% + 30px);
+    left: 20px;
+    right: 20px;
+    transition: bottom .4s;
+}
+
+.card-no {
+    font-size: 36px;
+    color: #ec6a1b;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.card-main-title {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #292b2c;
+}
+
+.card-content {
+    color: #4b4b4b;
+    margin-top: 1px;
+    line-height: 16px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.read-more-btn {
+    border: 2px solid #0d65b1;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-weight: 600;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #278fe8;
+    color: #fff;
+    border-radius: 2px;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+.read-more-btn:hover {
+    background: transparent;
+    color: #db3236;
+
+}
+
+.shape-box_half>.after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fa9d62;
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+/*On hover*/
+.shape-box_half:hover:before {
+    transform: skewY(20deg);
+}
+
+.shape-box_half:hover figcaption {
+    transform: translateY(0);
+}
+
+.shape-box_half:hover figcaption .show-cont {
+    bottom: 100%;
+}
+
+.shape-box_half:hover>.after {
+    opacity: 1;
+}
+
+
+/*Snapshot of programems*/
