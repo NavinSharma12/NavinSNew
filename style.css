@@ -128,6 +128,20 @@ section#about {
   height: auto;
 }
 
+.AboutUsTitle{
+  float: left;
+  width: 200px;
+  padding: 10px;
+}
+
+.MissionVisionCard
+{
+  /* margin: 2px; */
+  /* border: 1px solid #efefef; */
+  padding: 10px;
+  /* box-shadow: 0 0 5px rgba(109, 109, 109, 0.7); */
+}
+
 p.mainHeading span.smallLine {
   width: 37px;
   display: block;
