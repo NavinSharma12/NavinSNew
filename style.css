@@ -1542,7 +1542,7 @@ html {
   cursor: pointer;
 }
 .gallery .gallery-item:hover {
-  transform: scale(1.25);
+  transform: scale(0.8);
 }
 @media (max-width: 600px) {
   .gallery {
@@ -1802,4 +1802,17 @@ html {
 .email-signature1 .icon{text-align:center;transform:translateY(0) translatex(50%);top:auto;bottom:10px;right:50%}
 .email-signature1 .icon li{display:inline-block}
 .email-signature1 .icon li a{margin:0 5px 0}
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #1f44bc; 
 }
