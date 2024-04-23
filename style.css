@@ -195,7 +195,7 @@ span.smallLine {
 }
 
 
-.btnBrocher
+.btnBrocher 
 {
   color: #ffffff;
   background-color: #ec6a1b;
@@ -204,8 +204,15 @@ span.smallLine {
   border-radius: 5px;
   border: none;
   padding: 10px;
-  margin-top: 10px;
 }
+
+.btnBrocher:hover
+{
+  color: #ffffff;
+  background-color: #ec6a1b;
+  text-decoration: none;
+}
+
 
 .bannerButtons{
   padding-top: 10px;
