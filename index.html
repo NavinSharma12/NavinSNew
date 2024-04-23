@@ -28,7 +28,10 @@
   <!-- Your custom CSS -->
   <link href="style.css" rel="stylesheet">
 
-
+  <link
+  href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+  rel="stylesheet"
+/>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
 
@@ -130,7 +133,7 @@
 
                   </span><br>
                   <span class="bannerButtons mt-5">
-                    <input type="button" class="btnKnowMore" value="Know More">
+                    <a href="#service" class="btnKnowMore" value="">Know More</a>
                     <input type="button" class="btnBrocher" value="Download Brochure">
                   </span>
                 </p>
@@ -147,7 +150,7 @@
                   <span>"Through education, nurture potential, empower individuals to achieve excellence"</span>
                   <br>
                   <span class="bannerButtons mt-5">
-                    <input type="button" class="btnKnowMore" value="Know More">
+                    <a href="#service" class="btnKnowMore" value="">Know More</a>
                     <input type="button" class="btnBrocher" value="Download Brochure">
                   </span>
                 </p>
@@ -160,7 +163,7 @@
                   <span>"Let's work together to achieve synergy in people, potential, and performance" </span>
                   <br>
                   <span class="bannerButtons mt-5">
-                    <input type="button" class="btnKnowMore" value="Know More">
+                    <a href="#service" class="btnKnowMore" value="">Know More</a>
                     <input type="button" class="btnBrocher" value="Download Brochure">
                   </span>
                 </p>
@@ -191,8 +194,9 @@
               class="bi bi-star-fill"></i> Performance</p>
         </div>
         <div class="caraousalAbout my-3">
-          <div class="row align-items-top">
-            <div class="col-12 col-lg-6">
+          <div class="row align-items-top" style="display: flex; justify-content: center;">
+            <!-- <div class="1"></div> -->
+            <div class="col-5">
 
               <img class="AboutUsTitle" src="img/AboutUs.png">
               <p class="innerCarousalPara pt-1"><b>Welcome to Uplift Synergy</b>, your catalyst for personal and
@@ -206,13 +210,12 @@
                 toward your desired outcomes with precision and purpose
 
               </p>
-              <a href="#contactUs">
-                <button class="btnSucess">Contact Us</button>
-              </a>
-
             </div>
-            <div class="col-12 col-lg-6">
-              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="col-5">
+              <div>
+                <img src="img/AboutUs_SideImg.png"/>
+              </div>
+              <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -245,18 +248,24 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+              </div> -->
 
             </div>
+            <!-- <div class="1"></div> -->
           </div>
+          <div>
+            <a href="#contactUs">
+              <button class="btnSucess">Contact Us</button>
+            </a>
 
+          </div>
         </div>
       </div>
 
     </div>
   </section>
 
-  <section id="missionVision">
+  <section id="missionVision" style="background-color: #efefef;">
     <p class="mainHeading"><span>Mission</span> &<span> Vision</span><span class="smallLine"></span></p>
     <p class="grayParaInfo pt-3">Mission to unlock human potential through experience; Vision is to empower individuals.
     </p>
@@ -267,7 +276,7 @@
           <div class="row">
             <div class="MissionVisionCard col-12 col-lg-6">
               <div class="ImageContent">
-                <img src="img/mission.png" height="100">
+                <img src="img/mission.png" height="200">
 
               </div>
               <p class="canvaPara pt-4">
@@ -318,7 +327,7 @@
         <div class="popup-content">
           <span class="close-btn" style="cursor: hand;" onclick="closeCorporatePopup()">&times;</span>
           <!-- Content inside the popup goes here -->
-          <h2>Corporate Training</h2>
+          <h2 style="font-size: 17px; font-weight: 800;">Corporate Training</h2>
           <div style="overflow-y: scroll;width: 100%;height: 350px;" class="p-3">
           <p style="text-align: justify;font-size: 15px;;">
             The training programs cover a wide range of soft skills, including communication, time management, 
@@ -388,7 +397,7 @@
         <div class="popup-content">
           <span class="close-btn" style="cursor: hand;" onclick="closeEducationalTrainingPopup()">&times;</span>
           <!-- Content inside the popup goes here -->
-          <h2>Educational Training Program</h2>
+          <h2 style="font-size: 17px; font-weight: 800;">Educational Training Program</h2>
           <div style="overflow-y: scroll;width: 100%;height: 350px;" class="p-3">
           <p style="text-align: justify;font-size: 15px;;">
             Some text here.
@@ -469,7 +478,7 @@
         <div class="popup-content">
           <span class="close-btn" onclick="closeCounsellingPopup()">&times;</span>
           <!-- Content inside the popup goes here -->
-          <h2>Counselling</h2>
+          <h2 style="font-size: 17px; font-weight: 800;">Counselling</h2>
           <div style="overflow-y: scroll;width: 100%;height: 350px;" class="p-3">
           <p style="text-align: justify;font-size: 15px;;">
             Navigate your personal and professional journey with precision using our tailored counseling services. 
@@ -528,7 +537,7 @@
         <div class="popup-content">
           <span class="close-btn" onclick="closeCoachingPopup()">&times;</span>
           <!-- Content inside the popup goes here -->
-          <h2>Coaching</h2>
+          <h2 style="font-size: 17px; font-weight: 800;">Coaching</h2>
           <div style="overflow-y: scroll;width: 100%;height: 350px;" class="p-3">
           <p style="text-align: justify;font-size: 15px;;">
             Transform your life and leadership skills with our specialized coaching services. 
@@ -673,7 +682,7 @@
   </section> -->
 
 
-  <section class="portfolio-section" id="portfolio">
+  <section class="portfolio-section" id="portfolio"  style="background-color: #efefef;">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -1030,7 +1039,7 @@
     </div>
   </section>
 
-  <section id="ourTeam" style="background-color: #fff;">
+  <section id="ourTeam"  style="background-color: #efefef;">
     <p class="mainHeading">Meet Our <span>Team </span><span class="smallLine"></span></p>
     <p class="grayParaInfo pt-4 pb-4 mb-0">Our Passion leads to design, design leads to performance, and performance
       leads to success. We believe that apps and websites should not only be eye catching but actually provide a great
@@ -1183,136 +1192,93 @@
     <h3>Our Clientale</h3>
     <p class="grayParaInfo pt-2 pb-4">Some words here for saying something about the valuable Clientale</p>
 
-    <!--Courosel Clients slider-->
+    <!--Courosel Corporate Clients slider-->
 
     <div class="slider">
-      <div class="slide-track">
+      <div class="slide-track-corp">
         <div class="slide">
-          <img src="img/Clients/C1.jpeg" height="150" alt="" />
+          <img src="img/Clients/corp/C1.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C2.jpeg" height="150" alt="" />
+          <img src="img/Clients/corp/C2.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C3.jpeg" height="150" alt="" />
+          <img src="img/Clients/corp/C3.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C4.jpeg" height="150" alt="" />
+          <img src="img/Clients/corp/C4.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C5.jpeg" height="150" alt="" />
+          <img src="img/Clients/corp/C5.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C6.jpeg" height="150" alt="" />
+          <img src="img/Clients/corp/C6.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C7.jpeg" height="150" alt="" />
+          <img src="img/Clients/corp/C7.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C8.jpeg" height="150" alt="" />
+          <img src="img/Clients/corp/C8.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C9.jpeg" height="150" alt="" />
+          <img src="img/Clients/corp/C9.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C10.jpeg" height="150" alt="" />
+          <img src="img/Clients/corp/C10.png"  height="100" alt="" />
         </div>                   
         <div class="slide">      
-          <img src="img/Clients/C11.jpeg" height="150" alt="" />
+          <img src="img/Clients/C11.png"  height="100" alt="" />
         </div>                   
         <div class="slide">      
-          <img src="img/Clients/C12.jpeg" height="150" alt="" />
+          <img src="img/Clients/corp/C12.png"  height="100" alt="" />
         </div>                   
         <div class="slide">      
-          <img src="img/Clients/C13.jpeg" height="150" alt="" />
+          <img src="img/Clients/corp/C13.png"  height="100" alt="" />
         </div>                   
         <div class="slide">      
-          <img src="img/Clients/C14.jpeg" height="150" alt="" />
+          <img src="img/Clients/corp/C14.png"  height="100" alt="" />
         </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C15.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C16.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C17.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C18.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C19.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C20.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C21.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C22.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C23.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C24.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C25.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C26.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C27.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C28.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C29.jpeg" height="150" alt="" />
-        </div>                   
-        <div class="slide">      
-          <img src="img/Clients/C30.jpeg" height="150" alt="" />
+      </div>
+    </div>
+    <!--End of Courosel-->
+
+    <!--Courosel Education Clients slider-->
+
+    <div class="slider mt-3">
+      <div class="slide-track-edu">
+        <div class="slide">
+          <img src="img/Clients/Edu/E1.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C.jpeg" height="150" alt="" />
+          <img src="img/Clients/Edu/E2.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C.jpeg" height="150" alt="" />
+          <img src="img/Clients/Edu/E3.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C.jpeg" height="150" alt="" />
+          <img src="img/Clients/Edu/E4.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C.jpeg" height="150" alt="" />
+          <img src="img/Clients/Edu/E5.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C.jpeg" height="150" alt="" />
+          <img src="img/Clients/Edu/E6.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C.jpeg" height="150" alt="" />
+          <img src="img/Clients/Edu/E7.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C.jpeg" height="150" alt="" />
+          <img src="img/Clients/Edu/E8.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C.jpeg" height="150" alt="" />
+          <img src="img/Clients/Edu/E9.png"  height="100" alt="" />
         </div>
         <div class="slide">
-          <img src="img/Clients/C.jpeg" height="150" alt="" />
-        </div>
-        <div class="slide">
-          <img src="img/Clients/C.jpeg" height="150" alt="" />
-        </div>
-        <div class="slide">
-          <img src="img/Clients/C.jpeg" height="150" alt="" />
-        </div>
-        <div class="slide">
-          <img src="img/Clients/C.jpeg" height="150" alt="" />
-        </div>
+          <img src="img/Clients/Edu/E10.png"  height="100" alt="" />
+        </div>                   
+        <div class="slide">      
+          <img src="img/Clients/Edu/E11.png"  height="100" alt="" />
+        </div>                   
         
         
       </div>
@@ -1383,7 +1349,7 @@
 
   </section>
 
-  <section id="contactUs">
+  <section id="contactUs"  style="background-color: #efefef;">
     <p class="mainHeading">Contact <span>Us! </span><span class="smallLine"></span></p>
     <p class="grayParaInfo pt-4 pb-3">If you would like to know more about our services or schedule a counselling
       session,

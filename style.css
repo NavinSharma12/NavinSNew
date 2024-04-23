@@ -6,8 +6,8 @@ nav {
   /* background-color: #fff !important; */
   /* box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.15) !important; */
   z-index: 999990;
-  background-color: #70a7c8 !important;
-  background: linear-gradient(45deg, #fff,#fff,   #f4f2f2,#fff,  #f4f2f2, #fff,  #fff, #f4f2f2);
+  background-color: #fff !important;
+  /* background: linear-gradient(45deg, #fff,#fff,   #f4f2f2,#fff,  #f4f2f2, #fff,  #fff, #f4f2f2); */
 	background-size: 400% 400%;
 	animation: gradientBG 10s ease infinite;
 }
@@ -15,8 +15,8 @@ nav {
 .navbar.scrolled {
   /* background-color: white !important; Background color when scrolled */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow when scrolled */
-  background-color: #70a7c8 !important;
-  background: linear-gradient(45deg, #fff,#fff,   #f4f2f2,#fff,  #f4f2f2, #fff,  #fff, #f4f2f2);
+   background-color: #fff !important;
+  /* background: linear-gradient(45deg, #fff,#fff,   #f4f2f2,#fff,  #f4f2f2, #fff,  #fff, #f4f2f2); */ 
 	background-size: 400% 400%;
 	animation: gradientBG 10s ease infinite;
 }
@@ -171,12 +171,12 @@ span.smallLine {
 
 .caraousalAbout .innerCarousalPara {
   color: #2b2b2b;
-  font-size: 15px;
-  padding: 0 15px 15px 15px;
+  font-size: 16px;
+  padding: 0 5px 10px 10px;
   text-align: justify;
 }
 
-.btnKnowMore
+.btnKnowMore 
 {
   color: #ffffff;
   background-color: #278fe8;
@@ -186,6 +186,15 @@ span.smallLine {
   border: none;
   padding: 10px;
 }
+
+.btnKnowMore:hover
+{
+  color: #ffffff;
+  background-color: #278fe8;
+  text-decoration: none;
+}
+
+
 .btnBrocher
 {
   color: #ffffff;
@@ -273,7 +282,7 @@ span.smallLine {
 }
 
 .canvaPara {
-  font-size: 14px;
+  font-size: 16px;
   color: #2b2b2b;
 }
 
@@ -310,7 +319,7 @@ span.smallLine {
 
 #Testimonial p.testimonialUserView {
   color: white !important;
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
 }
 
@@ -805,6 +814,7 @@ section#quotes {
   font-size: 20px;
   font-weight: bolder;
   color: white;
+  height: 80px;
 }
 
 .authorQuote {
@@ -887,6 +897,7 @@ section#carrerAptitude {
 }
 
 .pattern-banner {
+  background-color: #202020;
   /* background-image: url(img/TopBgImageHeader.png);
   width: 100%;
   height: 100%;
@@ -1151,21 +1162,32 @@ Test CSS
 
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+	100% { transform: translateX(calc(-100px * 11))}
+}
+@keyframes scroll_1 {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-100px * 11))}
 }
 
-
+.ImageContent
+{
+  height: 100px!important;
+  display: flex;
+  justify-content: center;
+}
 .slider {
 
-	background: white;
+	background: rgb(255, 255, 255);
 	
   /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
-	height: 150px;
+	height: 110px;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
-  padding-right: 15px;
-	width: 90vw;
+  /* padding-right: 15px; */
+	width: 70vw;
+  display: inline-block;
+  justify-items: center;
 	
 	&::before,
 	&::after {
@@ -1175,16 +1197,16 @@ Test CSS
 		rgba(255, 255, 255, 0) 100%
 	);
 		content: "";
-		height: 150px;
-		position: absolute;
+		/* height: 100px; */
+		/* position: absolute; */
 		/* width: 200px; */
 		z-index: 2;
 	}
 	
 	&::after {
-		right: 0;
+		right: 0; 
 		top: 0;
-		transform: rotateZ(180deg);
+		transform: rotateZ(180deg); 
 	}
 
 	&::before {
@@ -1192,16 +1214,48 @@ Test CSS
 		top: 0;
 	}
 	
-	.slide-track {
-		animation: scroll 40s linear infinite;
-		display: flex;
-		width: calc(150px * 30);
+	.slide-track-corp {
+		width: calc(100px * 11);
+  display: flex;
+  animation: scroll 15s infinite linear;
+  justify-content: space-between;
+  	}
+
+  .slide-track-edu {
+	  width: calc(100px * 11);
+    display: flex;
+    animation: scroll_1 20s infinite linear;
+    justify-content: space-between;
 	}
-	
+
+ 	
 	.slide {
-		height: 150px;
-		width: auto;
+	  /* width: 150px;
+    height: 60px; */
+    display: grid;
+    place-items: center;
+    transition:0.5s;
+    cursor:pointer;
 	}
+
+  @keyframes scrollClient {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(calc(-150px * 10));
+    }
+  }
+  
+  @keyframes scrollClient2 {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(calc(-150px * 5));
+    }
+  }
+  
 }
 
 
@@ -1899,8 +1953,10 @@ html {
 
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -8px;
+  right: 0px;
+  font-size: 15px;
+  font-weight: 800;
   cursor: pointer;
 }
 
