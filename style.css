@@ -1,6 +1,6 @@
 nav {
   width: 100% !important;
-  height: 70px !important;
+  height: 86px !important;
   position: fixed !important;
   top: 0 !important;
   /* background-color: #fff !important; */
@@ -2036,4 +2036,16 @@ html {
   to {
     transform: translate(calc(-50% - 0.5rem));
   }
+}
+
+
+.AboutSideImg
+{
+  width: 100%;
+  height: auto;
+}
+.LogoCls
+{
+  margin-top: -49px;
+  width: 230px;
 }
