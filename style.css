@@ -1,6 +1,6 @@
 nav {
   width: 100% !important;
-  height: 86px !important;
+  height: 70px !important;
   position: fixed !important;
   top: 0 !important;
   /* background-color: #fff !important; */
@@ -80,7 +80,7 @@ h1 {
 
 section {
   width: 100%;
-  padding: 50px;
+  padding: 20px;
   background: #fff;
   /* border-bottom: 1px solid #ccc; */
   height: auto;
@@ -289,8 +289,15 @@ span.smallLine {
 }
 
 .canvaPara {
-  font-size: 16px;
+  font-size: 15px;
   color: #2b2b2b;
+  text-align: justify;
+  border: 1px solid #dcdcdc; 
+  border-radius: 10px; padding: 
+  15px;margin: 10px;
+  background-color: #fefefe;
+  box-shadow: 0 0 10px rgba(225, 225, 225, 0.7);
+  height: 250px;
 }
 
 
@@ -310,6 +317,7 @@ span.smallLine {
 
 .getYourLifeContent p {
   font-size: 14px !important;
+  margin-bottom: 10px;
 }
 
 #Testimonial {
@@ -2041,11 +2049,25 @@ html {
 
 .AboutSideImg
 {
-  width: 100%;
+  width: 50vw;
   height: auto;
 }
 .LogoCls
 {
-  margin-top: -49px;
+  margin-top: 13px;
   width: 230px;
+}
+
+@media screen and (max-height:400px)
+{
+  .AboutSideImg
+{
+  width: 100%;
+  height: 400px;
+}
+.LogoCls
+{
+  margin-top: -47px;
+  width: 230px;
+}
 }
