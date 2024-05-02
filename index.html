@@ -15,7 +15,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -28,6 +28,9 @@
 
   <!-- Your custom CSS -->
   <link href="style.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://unpkg.com/swiper@6.0.2/swiper-bundle.min.css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
 
   <link
   href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
@@ -35,7 +38,11 @@
 />
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
-
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'>
+  
 </head>
 
 <body>
@@ -43,16 +50,16 @@
 
   <div class="icons">
     <ul>
-      <a href="#">
+      <a href="https://www.linkedin.com/company/upliftsynergy/" target="_blank">
         <li class="linkedin"><i class="fa fa-linkedin"></i></li>
       </a>
-      <a href="#">
+      <a href="https://www.instagram.com/teamupliftsynergy?igsh=MTRsZ3Nsano4dG90Zg%3D%3D" target="_blank">
         <li class="instagram"><i class="fa fa-instagram"></i></li>
       </a>
-      <a href="#">
+      <a href="https://www.facebook.com/profile.php?id=61557825908463" target="_blank">
         <li class="facebook"><i class="fa fa-facebook"></i></li>
       </a>
-      <a href="#">
+      <a href="https://www.youtube.com/channel/UC2-a6AY6FByLTFJXts7wVYw" target="_blank">
         <li class="youtube"><i class="fa fa-youtube"></i></li>
       </a>
 
@@ -122,70 +129,76 @@
   <!-- HEADER -->
 
   <section id="home">
-    <div class="top-content pattern-banner">
-      <div class="banner-content">
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/Image_1_1.jpg" class="d-block w-100" alt="..." height="650">
-              <div class="homeCarouselContent one ">
-                <p>Unleashing Potential <br> Through People Understanding !<br>
-                  <span>"Together, we can light the path to a brighter future"
-
-                  </span><br>
-                  <span class="bannerButtons mt-5">
-                    <a href="#service" class="btnKnowMore" value="">Know More</a>
-                    <a href="#" class="btnBrocher" value="">Download Brochure</a>
-                    <!-- <input type="button" class="btnBrocher" value=""> -->
-                  </span>
-                </p>
-
-
-              </div>
-
-
-            </div>
-            <div class="carousel-item">
-              <img src="img/Image_2.jpg" class="d-block w-100" alt="..." height="825">
-              <div class="homeCarouselContent two">
-                <p>Nurturing Potential, <br> Inspiring Excellence !<br>
-                  <span>"Through education, nurture potential, empower individuals to achieve excellence"</span>
-                  <br>
-                  <span class="bannerButtons mt-5">
-                    <a href="#service" class="btnKnowMore" value="">Know More</a>
-                    <a href="#" class="btnBrocher" value="">Download Brochure</a>
-                  </span>
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="img/Image_3_2.jpg" class="d-block w-100" alt="..." height="825">
-              <div class="homeCarouselContent three">
-                <p> Integrating Growth for <br> Performance Excellence ! <br>
-                  <span>"Let's work together to achieve synergy in people, potential, and performance" </span>
-                  <br>
-                  <span class="bannerButtons mt-5">
-                    <a href="#service" class="btnKnowMore" value="">Know More</a>
-                    <a href="#" class="btnBrocher" value="">Download Brochure</a>
-                  </span>
-                </p>
-              </div>
-            </div>
+    <header>
+      <div class="owl-carousel owl-theme">
+          <div class="item">
+              <img src="img/Image_1.jpg" alt="images not found">
+              <div class="cover">
+                  <div class="container">
+                      <div class="header-content">
+                          <div class="line"></div>
+                          <h2>Unleashing Potential</h2>
+                          <h1>Through People Understanding</h1>
+                          <h4>Together, we can light the path to a brighter future</h4>
+                      </div>
+                  </div>
+               </div>
+          </div>                    
+          <div class="item">
+              <img src="img/Image_2.jpg" alt="images not found">
+              <div class="cover">
+                  <div class="container">
+                      <div class="header-content">
+                          <div class="line animated bounceInLeft"></div>
+                          <h2>Inspiring Excellence</h2>
+                          <h1>Nurturing Potential</h1>
+                          <h4>Through education, nurture potential, empower individuals to achieve excellence</h4>
+                      </div>
+                  </div>
+               </div>
+          </div>                
+          <div class="item">
+              <img src="img/Image_3.jpg" alt="images not found">
+              <div class="cover">
+                  <div class="container">
+                      <div class="header-content">
+                          <div class="line animated bounceInLeft"></div>
+                          <h2>Integrating Growth for</h2>
+                          <h1>Performance Excellence</h1>
+                          <h4>Let's work together to achieve synergy in people, potential, and performance</h4>
+                      </div>
+                  </div>
+               </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
       </div>
-    </div>
+  </header>
   </section>
+ 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+        <script id="rendered-js" >
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    dots: false,
+    nav: true,
+    mouseDrag: false,
+    autoplay: true,
+    animateOut: 'slideOutLeft',
+    responsive: {
+      0: {
+        items: 1 },
+  
+      600: {
+        items: 1 },
+  
+      1000: {
+        items: 1 } } });
+  //# sourceURL=pen.js
+      </script>
 
-  <section id="about" class="mt-2 pb-2">
+<section id="about" class="mt-2 pb-2">
     <div class="aboutContent">
       <div class="aboutTopContent">
         
@@ -236,7 +249,7 @@
   </section>
 
   <section id="missionVision" style="background-color: #efefef;">
-    <p class="mainHeading"><span>Mission</span> &<span> Vision</span><span class="smallLine"></span></p>
+    <p class="mainHeading">Mission <span>&</span> Vision<span class="smallLine"></span></p>
     <p class="grayParaInfo pt-3">Mission to unlock human potential through experience; Vision is to empower individuals.
     </p>
     <div class="aboutBottomContent" style="text-align: center;">
@@ -282,13 +295,11 @@
 
   <section id="service" style="background-color: #fff;">
     <div class="mt-0" style="background-color: #fff;">
-    <p class="mainHeading">Services <span>We Offer</span><span class="smallLine"></span></p>
-    <p class="grayParaInfo">Get the Uplift of your life with one of the India’s most
-      trusted institute for self-assessment, self-discovery and
-      Transformation.</p>
-
-
-
+    <p class="mainHeading">Services We Offer<span class="smallLine"></span></p>
+    <p class="grayParaInfo">
+      Uplift your life with India's leading trusted company 
+      for self-discovery and Transformation.
+    </p>
 
     <div class="box-wrapper">
 
@@ -349,9 +360,9 @@
         <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
         <figcaption>
           <div class="show-cont">
-            <!-- <h3 class="card-no">
-              <li class="fa fa-star"></li>
-            </h3> -->
+            <h3 class="card-no">
+              <li class="fa fa-graduation-cap"></li>
+            </h3>
             <h4 class="card-main-title">Corporate Trainings</h4>
           </div>
           <p class="card-content">
@@ -431,9 +442,9 @@
         <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
         <figcaption>
           <div class="show-cont">
-            <!-- <h3 class="card-no">
-              <li class="fa fa-star"></li>
-            </h3> -->
+            <h3 class="card-no">
+              <li class="fa fa-graduation-cap"></li>
+            </h3>
             <h4 class="card-main-title">Educational Trainings</h4>
           </div>
           <p class="card-content">Cultivate effective leaders through strategic training in decision-making,
@@ -488,9 +499,9 @@
         <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
         <figcaption>
           <div class="show-cont">
-            <!-- <h3 class="card-no">
-              <li class="fa fa-star"></li>
-            </h3> -->
+            <h3 class="card-no">
+              <li class="fa fa-graduation-cap"></li>
+            </h3>
             <h4 class="card-main-title">Counselling</h4>
           </div>
           <p class="card-content">
@@ -554,9 +565,9 @@
         <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
         <figcaption>
           <div class="show-cont">
-            <!-- <h3 class="card-no">
-              <li class="fa fa-star"></li>
-            </h3> -->
+            <h3 class="card-no">
+              <li class="fa fa-graduation-cap"></li>
+            </h3>
             <h4 class="card-main-title">Coaching</h4>
           </div>
           <p class="card-content">
@@ -660,15 +671,15 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <p class="mainHeading">Programmes <span>We Offered</span><span class="smallLine"></span></p>
+          <p class="mainHeading">Programmes We Offered<span class="smallLine"></span></p>
           <p class="grayParaInfo">Our training module focus on essential skills like communication, time management, and
             teamwork</p>
         </div>
       </div>
       <div class="portfolio-menu mt-2 mb-4">
         <div class="controls">
-          <button type="button" class="control outline" data-filter="all">All</button>
-          <button type="button" class="control outline" data-filter=".web">Corporates</button>
+          <!-- <button type="button" class="control outline" data-filter="all">All</button> -->
+          <button type="button" class="control outline mixitup-control-active" data-filter=".web">Corporates</button>
           <button type="button" class="control outline" data-filter=".dev">Teachers</button>
           <button type="button" class="control outline" data-filter=".wp">Students</button>
         </div>
@@ -1391,69 +1402,396 @@
   <section id="OurLevelOfBri">
     <p class="mainHeading">Snapshot of <span>Programmes</span><span class="smallLine"></span></p>
     <!-- <p class="grayParaInfo pt-4 pb-5">...</p> -->
-    <div class="container-fluid pt-3">
-      <div class="gallery mt-3" id="gallery">
+    <div class="container pt-3">
+      <!-- <div class="gallery mt-3" id="gallery">
+
 
         <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,studied" alt=""></div>
+          <div class="content"><img src="img/SnapShots/S1.png"  alt=""></div>
         </div>
         <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,substance" alt=""></div>
+          <div class="content"><img src="img/SnapShots/S2.png"  alt=""></div>
         </div>
         <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,choose" alt=""></div>
+          <div class="content"><img src="img/SnapShots/S3.png"  alt=""></div>
         </div>
         <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,past" alt=""></div>
+          <div class="content"><img src="img/SnapShots/S4.png"  alt=""></div>
         </div>
         <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,lamp" alt=""></div>
+          <div class="content"><img src="img/SnapShots/S5.png"  alt=""></div>
         </div>
         <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,yet" alt=""></div>
+          <div class="content"><img src="img/SnapShots/S6.png"  alt=""></div>
         </div>
         <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,eight" alt=""></div>
+          <div class="content"><img src="img/SnapShots/S6.png"  alt=""></div>
         </div>
         <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,crew" alt=""></div>
+          <div class="content"><img src="img/SnapShots/S8.png"  alt=""></div>
         </div>
         <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,event" alt=""></div>
+          <div class="content"><img src="img/SnapShots/S9.png"  alt=""></div>
         </div>
         <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,instrument" alt=""></div>
+          <div class="content"><img src="img/SnapShots/S10.png"  alt=""></div>
         </div>
         <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,practical" alt=""></div>
+          <div class="content"><img src="img/SnapShots/S11.png"  alt=""></div>
         </div>
         <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,pass" alt=""></div>
+          <div class="content"><img src="img/SnapShots/S12.png"  alt=""></div>
         </div>
         <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,bigger" alt=""></div>
+          <div class="content"><img src="img/SnapShots/S13.png"  alt=""></div>
         </div>
         <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,number" alt=""></div>
+          <div class="content"><img src="img/SnapShots/S14.png"  alt=""></div>
         </div>
-        <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,pass" alt=""></div>
-        </div>
-        <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,bigger" alt=""></div>
-        </div>
-        <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,number" alt=""></div>
-        </div>
-        <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,pass" alt=""></div>
-        </div>
-        <div class="gallery-item">
-          <div class="content"><img src="https://source.unsplash.com/random/?tech,bigger" alt=""></div>
-        </div>
+        
+      </div> -->
 
-      </div>
+      <div class="loader">
+        <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+           <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+               <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"/>
+           </path>
+        </svg>
+     </div>
+   
+     <!--gallery-->
+     <div class="gallery-wrapper">
+        <div class="content">
+           <div class="gallery full">
+               <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S1.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S2.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S3.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S4.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S5.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S6.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S7.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S8.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S9.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S10.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S11.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S12.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S13.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S14.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                         </div>
+                     </div>
+                     
+                  </div>
+               </div>
+   
+               <div class="swiper-next-button">
+                  <em class="material-icons">chevron_right</em>
+               </div>
+               <div class="swiper-prev-button">
+                  <em class="material-icons">chevron_left</em>
+               </div>
+           </div>
+   
+           <div class="gallery thumb">
+               <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S1.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+   
+                            <div class="overlay">
+                               <em class="material-icons">remove_red_eye</em>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S2.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+   
+                            <div class="overlay">
+                               <em class="material-icons">remove_red_eye</em>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S3.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+   
+                            <div class="overlay">
+                               <em class="material-icons">remove_red_eye</em>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S4.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+   
+                            <div class="overlay">
+                               <em class="material-icons">remove_red_eye</em>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S5.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+   
+                            <div class="overlay">
+                               <em class="material-icons">remove_red_eye</em>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S6.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+   
+                            <div class="overlay">
+                               <em class="material-icons">remove_red_eye</em>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S7.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+   
+                            <div class="overlay">
+                               <em class="material-icons">remove_red_eye</em>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S8.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+   
+                            <div class="overlay">
+                               <em class="material-icons">remove_red_eye</em>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S9.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+   
+                            <div class="overlay">
+                               <em class="material-icons">remove_red_eye</em>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S10.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+   
+                            <div class="overlay">
+                               <em class="material-icons">remove_red_eye</em>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S11.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+   
+                            <div class="overlay">
+                               <em class="material-icons">remove_red_eye</em>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S12.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+   
+                            <div class="overlay">
+                               <em class="material-icons">remove_red_eye</em>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S13.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+   
+                            <div class="overlay">
+                               <em class="material-icons">remove_red_eye</em>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <div class="image">
+                            <img src="img/SnapShots/S14.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+   
+                            <div class="overlay">
+                               <em class="material-icons">remove_red_eye</em>
+                            </div>
+                         </div>
+                     </div>
+                  </div>
+               </div>
+   
+               <div class="swiper-next-button">
+                  <em class="material-icons">arrow_right_alt</em>
+               </div>
+               <div class="swiper-prev-button">
+                  <em class="material-icons">arrow_right_alt</em>
+               </div>
+           </div>
+        </div>
+     </div>
+   
+   
     </div>
+    <script src='https://unpkg.com/swiper@6.0.2/swiper-bundle.min.js'></script>
+    <script>
+
+$(function(){
+    if($('.gallery-wrapper').length){
+        var galleryThumbs = new Swiper('.gallery-wrapper .content .gallery.thumb .swiper-container', {
+            speed: 900,
+            effect: 'slide',
+            spaceBetween: 12,
+            grabCursor: false,
+            simulateTouch: true,
+            loop: false,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            navigation: {
+                nextEl: '.gallery-wrapper .content .gallery.thumb .swiper-next-button',
+                prevEl: '.gallery-wrapper .content .gallery.thumb .swiper-prev-button',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                414: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                },
+                768: {
+                    slidesPerView: 5,
+                    spaceBetween: 10
+                },
+                1024: {
+                    slidesPerView: 7,
+                    spaceBetween: 10
+                }
+            },
+			  on: {
+				  init: function() { 
+				  	let containerThumbWidth = $('.gallery-wrapper .content .gallery.thumb').outerWidth();
+	
+	let totalThumbWidth = 0;
+	
+	$('.gallery.thumb .swiper-container .swiper-wrapper .swiper-slide').each(function(){
+		let thumbWidth = $(this).outerWidth();
+		totalThumbWidth += thumbWidth
+	});
+	
+	
+	
+	if(totalThumbWidth < containerThumbWidth){
+		$('.gallery.thumb .swiper-next-button, .gallery.thumb .swiper-prev-button').addClass('hide');
+	}else{
+		$('.gallery.thumb .swiper-next-button, .gallery.thumb .swiper-prev-button').removeClass('hide');
+	}
+			   }
+			  }
+        });
+
+        var galleryFull = new Swiper('.gallery-wrapper .content .gallery.full .swiper-container', {
+            speed: 900,
+            effect: 'slide',
+            slidesPerView: 3,
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 7000,
+                disableOnInteraction: false,
+                stopOnLastSlide: false
+            },
+            keyboard: {
+                enabled: true,
+            },
+            grabCursor: false,
+            simulateTouch: false,
+            loop: true,
+            navigation: {
+                nextEl: '.gallery-wrapper .content .gallery.full .swiper-next-button',
+                prevEl: '.gallery-wrapper .content .gallery.full .swiper-prev-button',
+            },
+            thumbs: {
+                swiper: galleryThumbs
+            },
+            on: {
+                slideChangeTransitionStart: function () {
+                    $('.gallery-wrapper .content .gallery.full .swiper-slide .overlay').removeClass('show');
+                },
+                slideChangeTransitionEnd: function () {
+                    $('.gallery-wrapper .content .gallery.full .swiper-slide-active .overlay').addClass('show');
+                }
+            }
+        });
+    }
+});
+
+
+$(window).on("load", function() {
+    setTimeout(function(){
+        $('.loader').fadeOut();
+    }, 1000);
+});
+    </script>
   </section>
 
   <section id="ourTeam"  style="background-color: #efefef;">
@@ -1461,6 +1799,9 @@
     <p class="grayParaInfo pt-4 pb-4 mb-0">Our Passion leads to design, design leads to performance, and performance
       leads to success. We believe that apps and websites should not only be eye catching but actually provide a great
       user experience that users will remember</p>
+
+      
+
 
     <div class="ourTeamDetail m-2 mt-0 mb-0">
       <div class="row my-5 justify-content-center">
@@ -1691,7 +2032,7 @@
   </section> -->
 
 
-  <section id="quotes">
+  <!-- <section id="quotes">
 
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -1739,7 +2080,7 @@
 
 
 
-  </section>
+  </section> -->
 
   <section id="contactUs"  style="background-color: #efefef;">
     <p class="mainHeading">Contact <span>Us! </span><span class="smallLine"></span></p>
@@ -1800,30 +2141,44 @@
 
 
 
-  <!-- JS Links -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  
+
+
+
+  <div class="topArrow">
+    <a href="#">
+      <i class="bi bi-arrow-up-circle-fill"></i>
+    </a>
+
+  </div>
+
+
+    <!-- JS Links -->
+      
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-  <!-- Mixitup -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.2.2/mixitup.min.js'></script>
-  <!-- fancybox -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js'></script>
-  <!-- Fancybox js -->
-  <script>
+    <!-- fancybox -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.0/mixitup.js'></script>
+    <!-- Fancybox js -->
+    <script>
     /*Downloaded from https://www.codeseek.co/ezra_siton/mixitup-fancybox3-JydYqm */
     // 1. querySelector
     var containerEl = document.querySelector(".portfolio-item");
+    containerEl.click();
     // 2. Passing the configuration object inline
     //https://www.kunkalabs.com/mixitup/docs/configuration-object/
     var mixer = mixitup(containerEl, {
       animation: {
         effects: "fade translateZ(-100px)",
         effectsIn: "fade translateY(-100%)",
-        easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
+        easing: "cubic-bezier(0.645, 0.045, 0.355, 1)",
+        
       }
     });
     // fancybox insilaze & options //
@@ -1837,26 +2192,14 @@
         return current.type === "image" ? "next" : false;
       }
     });
-  </script>
-
-
-
-
-  <div class="topArrow">
-    <a href="#">
-      <i class="bi bi-arrow-up-circle-fill"></i>
-    </a>
-
-  </div>
-
-
+    </script>
 
 
   <!-- Bootstrap JavaScript and dependencies -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-  <script src="path/to/lazysizes.min.js" async=""></script>
+  <!-- <script src="path/to/lazysizes.min.js" async=""></script> -->
 
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -2013,39 +2356,7 @@
       }
     }, 2000)
 
-    var gallery = document.querySelector('#gallery');
-    var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
-    var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
-    var resizeAll = function () {
-      var altura = getVal(gallery, 'grid-auto-rows');
-      var gap = getVal(gallery, 'grid-row-gap');
-      gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-        var el = item;
-        el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-      });
-    };
-    gallery.querySelectorAll('img').forEach(function (item) {
-      item.classList.add('byebye');
-      if (item.complete) {
-        console.log(item.src);
-      }
-      else {
-        item.addEventListener('load', function () {
-          var altura = getVal(gallery, 'grid-auto-rows');
-          var gap = getVal(gallery, 'grid-row-gap');
-          var gitem = item.parentElement.parentElement;
-          gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-          item.classList.remove('byebye');
-        });
-      }
-    });
-    window.addEventListener('resize', resizeAll);
-    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-      item.addEventListener('click', function () {
-        item.classList.toggle('full');
-      });
-    });
-
+    
   </script>
 
 </body>
