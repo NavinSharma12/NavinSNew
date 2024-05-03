@@ -679,7 +679,7 @@
       <div class="portfolio-menu mt-2 mb-4">
         <div class="controls">
           <!-- <button type="button" class="control outline" data-filter="all">All</button> -->
-          <button type="button" class="control outline mixitup-control-active" data-filter=".web">Corporates</button>
+          <button type="button" id="btnCorporate" class="control outline mixitup-control-active" data-filter=".web">Corporates</button>
           <button type="button" class="control outline" data-filter=".dev">Teachers</button>
           <button type="button" class="control outline" data-filter=".wp">Students</button>
         </div>
@@ -2147,6 +2147,7 @@ $(window).on("load", function() {
         
       }
     });
+
     // fancybox insilaze & options //
     $("[data-fancybox]").fancybox({
       loop: true,
@@ -2168,6 +2169,7 @@ $(window).on("load", function() {
   <!-- <script src="path/to/lazysizes.min.js" async=""></script> -->
 
   <script>
+    document.getElementById("btnCorporate").click();
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
