@@ -2333,6 +2333,9 @@ section {
   width: 100%;
   height: auto;
 }
+.scroller__img {
+  height: 80px;
+}
 .LogoCls
 {
   margin-top: -47px;
