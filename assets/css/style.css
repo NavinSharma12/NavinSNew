@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #212121;
 }
 
 a {
@@ -735,7 +735,8 @@ section {
 
 .why-us .content p {
   font-size: 15px;
-  color: #848484;
+  color: #212121;
+  text-align: justify;
 }
 
 .why-us .video-box {
@@ -795,6 +796,7 @@ section {
 .why-us .accordion-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
+  text-align: justify;
 }
 
 .why-us .accordion-list .icon-show {
@@ -1394,6 +1396,9 @@ section {
   background: #fff;
   padding: 60px 0;
 }
+.team P{
+  text-align: justify;
+}
 
 .team .member {
   overflow: hidden;
@@ -1472,7 +1477,7 @@ section {
   font-size: 14px;
   padding-top: 15px;
   line-height: 26px;
-  color: #5e5e5e;
+  color: #2e2e2e;
 }
 
 .team .member:hover {
