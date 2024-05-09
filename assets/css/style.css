@@ -556,7 +556,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .section-bg {
@@ -930,6 +930,10 @@ section {
   border-radius: 5px;
 }
 
+.services p {
+  text-align: justify;
+}
+
 .services .service-box .icon {
   font-size: 36px;
   padding: 40px 20px;
@@ -1228,6 +1232,10 @@ section {
   border-radius: 50px;
 }
 
+.portfolio p {
+  text-align: justify;
+}
+
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
@@ -1394,7 +1402,7 @@ section {
 --------------------------------------------------------------*/
 .team {
   background: #fff;
-  padding: 60px 0;
+  padding: 5px 0;
 }
 .team P{
   text-align: justify;
