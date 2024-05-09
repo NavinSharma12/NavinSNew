@@ -9,6 +9,9 @@
 (function() {
   "use strict";
 
+  
+ 
+
   /**
    * Easy selector helper function
    */
@@ -224,9 +227,12 @@
       });
 
       let portfolioFilters = select('#portfolio-flters li', true);
+      
 
       on('click', '#portfolio-flters li', function(e) {
         e.preventDefault();
+        
+
         portfolioFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
@@ -238,11 +244,15 @@
         portfolioIsotope.on('arrangeComplete', function() {
           AOS.refresh()
         });
+
       }, true);
+
+      portfolioFilters[0].click();
     }
 
   });
 
+ 
   /**
    * Initiate Pure Counter 
    */
@@ -316,6 +326,8 @@
     
   
   });
+
+  
   /**
    * Animation on scroll
    */
