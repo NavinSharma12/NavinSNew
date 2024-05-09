@@ -556,7 +556,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .section-bg {
@@ -1967,250 +1967,87 @@ section {
   }
 }
 
-/*gallery*/
-
-.gallery-wrapper{
-	position: relative;
-	z-index: 1;
-
-	.content{
-		position: relative;
-		overflow: hidden;
-		width: auto;
-		height: 100vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		padding: 3vh 0;
-		background: darken($secondary-color, 12%);
-		background: linear-gradient(to left, darken($secondary-color, 8%), darken($secondary-color, 12%));
 
 
 
-		.gallery{
-			&.full{
-				position: relative;
-				display: flex;
-				align-items: center;
 
-				.swiper-container{
-					.swiper-wrapper{
-						display: flex;
-						height: 80vh;
-						align-items: center;
-						
-						.swiper-slide{
-							position: relative;
-							height: 50vh;
-							transition: all .4s ease-out;
-							box-sizing: border-box;
-							width: auto;
-							opacity: .25;
+/*Carousel Gallery*/
+.carousel-gallery{
+	margin: 50px 0;
+  padding: 0 30px;
+	.swiper-slide{
+		a{
+			display: block;
+			width: 100%;
+			height: 200px;
+			border-radius: 4px;
+			overflow: hidden;
+			position: relative;
 
-							&.swiper-slide-prev,
-							&.swiper-slide-next{width: 20%!important}
+			-webkit-box-shadow: 3px 2px 20px 0px rgba(0,0,0, .2);
+      -moz-box-shadow: 3px 2px 20px 0px rgba(0,0,0, .2);
+      box-shadow: 3px 2px 20px 0px rgba(0,0,0, .2);
 
-							&.swiper-slide-active{
-								height: 80vh;
-								width: 60%!important;
-								opacity: 1;
-
-								&:hover{
-									.zoom{
-										opacity: 1;
-										pointer-events: auto;
-										visibility: visible
-									}
-								}
-							}
-
-							.image{
-								width: 100%;
-								height: 100%;
-
-								img{
-									width: 100%;
-									height: 100%;
-									display: block;
-									object-fit: cover
-								}
-							}
-
-							.overlay{
-								position: absolute;
-								left: 0;
-								bottom: 0;
-								z-index: 2;
-								width: 100%;
-								height: 100%;
-								padding: 50px 50px 30px 50px;
-								background: rgb(0,0,0);
-								background: linear-gradient(0deg, rgba(0,0,0, .8) 0%, rgba(0,0,0, .4) 50%, rgba(0,0,0,0) 100%);
-								display: flex;
-								align-items: center;
-								opacity: 0;
-								visibility: hidden;
-								transition: all .3s ease-out;
-
-								&.show{
-									opacity: 1;
-									visibility: visible;
-
-									.text-wrap{
-										opacity: 1;
-										visibility: visible;
-										transform: translateY(0)
-									}
-								}
-
-								.text-wrap{
-									display: flex;
-									flex-direction: column;
-									max-width: 600px;
-									opacity: 0;
-									visibility: hidden;
-									transform: translateY(50px);
-									transition: all .4s linear;
-
-									.name{
-										span{
-											font-size: 2.2em;
-											font-weight: 700;
-										}
-									}
-
-									.caption{
-										p{
-											font-size: 1.16em;
-											color: #fff;
-											line-height: 1.7;
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-
-				.swiper-next-button,
-				.swiper-prev-button{
-					position: absolute;
-					z-index: 99;
-					outline: none;
-					transition: all .2s linear;
-					width: 20%;
-					height: 50vh;
-					display: flex;
-					justify-content: flex-end;
-					align-items: center;
-					cursor: pointer;
-
-					&.swiper-button-disabled{opacity: .2}
-
-					em{
-						font-size: 68px
-					}
-				}
-
-				.swiper-next-button{
-					right: 0;
-					padding-left: 5vw;
-					justify-content: flex-start
-				}
-
-				.swiper-prev-button{
-					left: 0; 
-					padding-right: 5vw
+			&:hover{
+				.image{
+					.overlay{opacity: 1}
 				}
 			}
 
-			&.thumb{
-				position: relative;
+			.image{
 				width: 100%;
-				max-width: 1020px;
-				margin: 0 auto;
-				display: flex;
-				align-items: center;
-				padding-left: 12px;
-
-				.swiper-container{
+				height: 100%;
+				background-size: cover;
+				background-position: center center;
+				.overlay{
 					width: 100%;
-					.swiper-wrapper{
-						.swiper-slide{
-							position: relative;
-							height: 10vh;
-							box-sizing: border-box;
-							cursor: pointer;
-							
-							&.swiper-slide-thumb-active{
-								.image{
-									box-shadow: inset 0px 0px 0px 2px $primary-color;
-									padding: 2px;
+					height: 100%;
+					background-color: rgba(20,20,20, .8);
+					text-align: center;
+					opacity: 0;
+					
+					-webkit-transition: all .2s linear; 
+          -o-transition: all .2s linear; 
+          transition: all .2s linear;
 
-									.overlay{opacity: 1}
-								}
-							}
-
-							.image{
-								width: 100%;
-								height: 100%;
-								position: relative;
-
-								img{
-									width: 100%;
-									height: 100%;
-									display: block;
-									object-fit: cover;
-								}
-
-								.overlay{
-									position: absolute;
-									left: 2px;
-									top: 2px;
-									background-color: rgba($secondary-color, .6);
-									display: flex;
-									align-items: center;
-									justify-content: center;
-									color: #fff;
-									width: calc(100% - 4px);
-									height: calc(100% - 4px);
-									opacity: 0;
-									transition: all .2s linear
-								}
-							}
-						}
+					em{
+						color: #fff;
+						font-size: 26px;
+						position: relative;
+            top: 50%; 
+            -webkit-transform: translateY(-50%); 
+            -ms-transform: translateY(-50%); 
+            -o-transform: translateY(-50%); 
+            transform: translateY(-50%);
+            display: inline-block;
 					}
-				}
-
-				.swiper-next-button{right: -15px}
-				.swiper-prev-button{left: -5px;
-					em{transform: rotate(180deg)}
-				}
-
-				.swiper-next-button,
-				.swiper-prev-button{
-					position: absolute;
-					z-index: 99;
-					outline: none;
-					transition: all .2s linear;
-					width: 32px;
-					height: 20px;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					background-color: $primary-color;
-					cursor: pointer;
-
-					&:hover{
-						background-color: darken($primary-color, 10%);
-					}
-
-					&.swiper-button-disabled{opacity: .2}
 				}
 			}
 		}
 	}
+	.swiper-pagination{
+		position: relative;
+		bottom: auto;
+		text-align: center;
+		margin-top: 25px;
+
+		.swiper-pagination-bullet{
+			-webkit-transition: all .2s linear; 
+      -o-transition: all .2s linear; 
+      transition: all .2s linear;
+
+			&:hover{
+				opacity: .7;
+			}
+
+			&.swiper-pagination-bullet-active{
+				background-color: #d63031;
+				transform: scale(1.1, 1.1)
+			}
+		}
+	}
 }
+/*# Carousel Gallery*/
 
 /* social icons  */
 .icons {
