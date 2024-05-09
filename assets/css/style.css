@@ -1976,7 +1976,7 @@ section {
 	.content{
 		position: relative;
 		overflow: hidden;
-		width: 100%;
+		width: auto;
 		height: 100vh;
 		display: flex;
 		flex-direction: column;
@@ -2042,7 +2042,7 @@ section {
 								bottom: 0;
 								z-index: 2;
 								width: 100%;
-								height: auto;
+								height: 100%;
 								padding: 50px 50px 30px 50px;
 								background: rgb(0,0,0);
 								background: linear-gradient(0deg, rgba(0,0,0, .8) 0%, rgba(0,0,0, .4) 50%, rgba(0,0,0,0) 100%);
