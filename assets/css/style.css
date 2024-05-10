@@ -1238,6 +1238,11 @@ section {
   text-align: justify;
 }
 
+.portfolio img {
+  height: 245px;
+  width: 100%;
+}
+
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
