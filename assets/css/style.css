@@ -671,8 +671,9 @@ section {
 
 .counts .count-box {
   box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 22px;
   width: 100%;
+  text-align: left;
 }
 
 .counts .count-box i {
@@ -680,6 +681,7 @@ section {
   font-size: 30px;
   color: #ed502e;
   float: left;
+  margin-top: -10px;
 }
 
 .counts .count-box span {
@@ -688,7 +690,7 @@ section {
   display: block;
   font-weight: 700;
   color: #0b2341;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .counts .count-box p {
@@ -1035,20 +1037,20 @@ section {
 }
 
 .services .service-box.red {
-  border-bottom: 3px solid #e9222c;
+  border-bottom: 3px solid #e2766b;
 }
 
 .services .service-box.red .icon {
-  color: #e9222c;
+  color: #e2766b;
   background: #fef7f8;
 }
 
 .services .service-box.red .read-more {
-  color: #e9222c;
+  color: #e2766b;
 }
 
 .services .service-box.red:hover {
-  background: #e9222c;
+  background: #e2766b;
 }
 
 .services .service-box.purple {
@@ -1270,7 +1272,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   left: 30px;
   right: 30px;
@@ -1420,13 +1422,16 @@ section {
   text-align: center;
   border-radius: 5px;
   background: #fff;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  box-shadow: 10px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
+  cursor: pointer;
+  
 }
 
 .team .member .member-img {
   position: relative;
   overflow: hidden;
+  
 }
 
 .team .member .member-img:after {
@@ -1443,9 +1448,10 @@ section {
 
 .team .member .social {
   position: absolute;
-  right: -100%;
+  /* right: -100%; */
+  right: 8px;
   top: 30px;
-  opacity: 0;
+  opacity: 1;
   border-radius: 4px;
   transition: 0.5s;
   background: rgba(255, 255, 255, 0.3);
@@ -1496,8 +1502,10 @@ section {
 }
 
 .team .member:hover {
-  transform: scale(1.08);
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  transform: scale(1.02);
+  box-shadow: 0px 10px 30px rgba(31, 31, 31, 0.1);
+  /* border-color:  rgba(31, 31, 31, 0.1);;
+  border: 1px solid  rgba(31, 31, 31, 0.1); */
 }
 
 .team .member:hover .social {
